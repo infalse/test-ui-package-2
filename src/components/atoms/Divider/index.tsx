@@ -2,22 +2,23 @@ import React, { memo } from 'react';
 import cns from 'classnames';
 
 export interface DividerProps extends React.HTMLAttributes<HTMLHRElement> {
-  color: string;
+  /**
+   * Divider color
+   * @default #bada55
+   */
+  color?: string;
 }
 
+/**
+ * Use Divider to separate sections
+ */
 export const Divider = memo<DividerProps>(
-  ({ color = 'red-500', className, ...props }) => {
+  ({ color = '#bada55', className, ...props }) => {
     return (
       <hr
         {...props}
-        className={cns(
-          'block',
-          'w-full',
-          'h-[1px]',
-          'border-none',
-          `bg-${color}`,
-          className
-        )}
+        className={cns('block', 'w-full', 'h-[1px]', 'border-none', className)}
+        style={{ backgroundColor: color }}
       />
     );
   }
