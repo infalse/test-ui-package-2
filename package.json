@@ -1,25 +1,26 @@
 {
+  "name": "test-ui-library-2",
   "version": "0.1.1",
+  "author": "Kirill Evtushenko",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
-  "files": [
-    "dist",
-    "src"
-  ],
-  "engines": {
-    "node": ">=10"
+  "homepage": "https://github.com/infalse/test-ui-package-2#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/infalse/test-ui-package-2.git"
   },
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "start": "tsdx watch",
-    "build": "NODE_ENV=production tsdx build",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "prepare": "NODE_ENV=production tsdx build",
     "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
-    "prepare": "NODE_ENV=production tsdx build",
     "size": "size-limit",
-    "analyze": "size-limit --why",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "analyze": "size-limit --why"
   },
   "peerDependencies": {
     "react": ">=16"
@@ -35,9 +36,6 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "test-ui-library-2",
-  "author": "Kirill Evtushenko",
-  "module": "dist/test-ui-library-2.esm.js",
   "size-limit": [
     {
       "path": "dist/test-ui-library-2.cjs.production.min.js",
@@ -61,6 +59,7 @@
     "@types/react-dom": "^18.0.5",
     "autoprefixer": "^10.4.7",
     "babel-loader": "^8.2.5",
+    "classnames": "^2.3.1",
     "husky": "^8.0.1",
     "postcss": "^8.4.14",
     "react": "^18.1.0",
@@ -72,8 +71,5 @@
     "tsdx": "^0.14.1",
     "tslib": "^2.4.0",
     "typescript": "^4.7.2"
-  },
-  "dependencies": {
-    "classnames": "^2.3.1"
   }
 }
