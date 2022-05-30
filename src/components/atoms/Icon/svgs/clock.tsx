@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { SvgProps } from '..';
 
-export default function TakedaClock(props: SvgProps) {
+export const ClockIcon = (props: SvgProps) => {
   return (
     <svg fill="currentColor" viewBox="0 0 16 16" className={props.className}>
       <g transform="matrix(1 0 0 1 -592 -735 )">
@@ -14,4 +14,4 @@ export default function TakedaClock(props: SvgProps) {
       </g>
     </svg>
   );
-}
+};

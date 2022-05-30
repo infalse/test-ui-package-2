@@ -1,24 +1,35 @@
 import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { ComponentStory } from '@storybook/react';
 
-import { Icon, IconMap } from '.';
+import {
+  AppleIcon,
+  ChevronRedIcon,
+  ChevronLeftIcon,
+  CalendarIcon,
+  ClockIcon,
+} from '.';
 
 export default {
   title: 'Components/atoms/Icon',
-  component: Icon,
   parameters: {
     layout: 'fullscreen',
   },
-} as ComponentMeta<typeof Icon>;
+};
 
-const icons = Object.keys(IconMap);
+const IconMap = [
+  AppleIcon,
+  ChevronRedIcon,
+  ChevronLeftIcon,
+  CalendarIcon,
+  ClockIcon,
+];
 
-const Template: ComponentStory<typeof Icon> = () => (
+const Template: ComponentStory<typeof AppleIcon> = () => (
   <div className="flex flex-wrap">
-    {icons.map((name, index) => (
+    {IconMap.map((Icon, index) => (
       <div className="flex flex-col justify-between items-center w-12 h-12 m-8">
-        <Icon variant={name as keyof typeof IconMap} key={index} />
-        <span className="text-xs">{name}</span>
+        <Icon key={index} />
+        <span className="text-xs">{(Icon as React.FC).displayName}</span>
       </div>
     ))}
   </div>

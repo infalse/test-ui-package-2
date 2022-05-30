@@ -1,7 +1,7 @@
 import React, { memo } from 'react';
 import { SvgProps } from '..';
 
-const ChevronLeft = memo<any>(({ className }: SvgProps) => {
+export const ChevronLeftIcon = memo<any>(({ className }: SvgProps) => {
   return (
     <svg
       viewBox="0 0 18 33"
@@ -37,6 +37,4 @@ const ChevronLeft = memo<any>(({ className }: SvgProps) => {
   );
 });
 
-ChevronLeft.displayName = 'ChevronLeft';
-
-export default ChevronLeft;
+ChevronLeftIcon.displayName = 'ChevronLeft';

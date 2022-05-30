@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { SvgProps } from '..';
 
-export default function TakedaCalendar(props: SvgProps) {
+export const CalendarIcon = (props: SvgProps) => {
   return (
     <svg {...props} viewBox="0 0 25 24" xmlns="http://www.w3.org/2000/svg">
       <g transform="matrix(1 0 0 1 -79 -255 )">
@@ -15,4 +15,4 @@ export default function TakedaCalendar(props: SvgProps) {
       </g>
     </svg>
   );
-}
+};

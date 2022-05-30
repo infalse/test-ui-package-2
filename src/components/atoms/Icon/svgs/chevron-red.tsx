@@ -1,7 +1,7 @@
 import React, { memo } from 'react';
 import { SvgProps } from '..';
 
-export const ChevronRed = memo((props: SvgProps) => {
+export const ChevronRedIcon = memo((props: SvgProps) => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" {...props}>
       <g>
@@ -34,4 +34,4 @@ export const ChevronRed = memo((props: SvgProps) => {
   );
 });
 
-ChevronRed.displayName = 'ChevronRed';
+ChevronRedIcon.displayName = 'ChevronRed';
