@@ -1,7 +1,14 @@
 import React from 'react';
 import { ComponentStory } from '@storybook/react';
 
-import { AppleIcon, ChevronRedIcon, ChevronLeftIcon, CalendarIcon, ClockIcon } from '.';
+import {
+  AppleIcon,
+  ChevronRedIcon,
+  ChevronLeftIcon,
+  CalendarIcon,
+  ClockIcon,
+  LinkedInIcon
+} from '.';
 
 export default {
   title: 'Components/atoms/Icon',
@@ -10,7 +17,7 @@ export default {
   }
 };
 
-const IconMap = [AppleIcon, ChevronRedIcon, ChevronLeftIcon, CalendarIcon, ClockIcon];
+const IconMap = [AppleIcon, ChevronRedIcon, ChevronLeftIcon, CalendarIcon, ClockIcon, LinkedInIcon];
 
 const Template: ComponentStory<typeof AppleIcon> = () => (
   <div className="flex flex-wrap">
