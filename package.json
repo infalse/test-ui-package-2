@@ -1,6 +1,6 @@
 {
   "name": "test-ui-library-3",
-  "version": "0.1.12",
+  "version": "0.1.11",
   "author": "Kirill Evtushenko",
   "license": "MIT",
   "main": "dist/index.js",
@@ -19,9 +19,7 @@
     "build-storybook": "build-storybook",
     "prepare": "NODE_ENV=production tsdx build",
     "test": "tsdx test --passWithNoTests",
-    "lint": "tsdx lint src",
-    "size": "size-limit",
-    "analyze": "size-limit --why"
+    "lint": "tsdx lint src"
   },
   "peerDependencies": {
     "react": ">=16"
@@ -38,19 +36,8 @@
     "trailingComma": "none",
     "tabWidth": 2
   },
-  "size-limit": [
-    {
-      "path": "dist/test-ui-library-3.cjs.production.min.js",
-      "limit": "10 KB"
-    },
-    {
-      "path": "dist/test-ui-library-3.esm.js",
-      "limit": "10 KB"
-    }
-  ],
   "devDependencies": {
     "@babel/core": "^7.18.2",
-    "@size-limit/preset-small-lib": "^7.0.8",
     "@storybook/addon-essentials": "^6.5.5",
     "@storybook/addon-info": "^5.3.21",
     "@storybook/addon-links": "^6.5.5",
@@ -67,7 +54,6 @@
     "react-dom": "^18.1.0",
     "react-is": "^18.1.0",
     "rollup-plugin-postcss": "^4.0.2",
-    "size-limit": "^7.0.8",
     "tailwindcss": "^3.0.24",
     "tsdx": "^0.14.1",
     "tslib": "^2.4.0",
