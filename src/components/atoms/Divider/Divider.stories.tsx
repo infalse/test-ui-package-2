@@ -7,8 +7,8 @@ export default {
   title: 'Components/atoms/Divider',
   component: Divider,
   parameters: {
-    layout: 'fullscreen',
-  },
+    layout: 'fullscreen'
+  }
 } as ComponentMeta<typeof Divider>;
 
 const Template: ComponentStory<typeof Divider> = args => <Divider {...args} />;
@@ -18,5 +18,5 @@ Default.args = {};
 
 export const Black = Template.bind({});
 Black.args = {
-  color: 'black',
+  color: 'black'
 };

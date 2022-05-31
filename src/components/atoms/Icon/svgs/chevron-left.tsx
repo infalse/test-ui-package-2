@@ -3,11 +3,7 @@ import { SvgProps } from '..';
 
 export const ChevronLeftIcon = memo<any>(({ className }: SvgProps) => {
   return (
-    <svg
-      viewBox="0 0 18 33"
-      xmlns="http://www.w3.org/2000/svg"
-      className={className}
-    >
+    <svg viewBox="0 0 18 33" xmlns="http://www.w3.org/2000/svg" className={className}>
       <defs>
         <mask fill="white" id="clip9">
           <path
