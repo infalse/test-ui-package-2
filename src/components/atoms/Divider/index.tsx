@@ -12,7 +12,7 @@ export interface DividerProps extends React.HTMLAttributes<HTMLHRElement> {
 /**
  * Use Divider to separate sections
  */
-export const Divider = memo<DividerProps>(({ color = '#bada55', className, ...props }) => {
+export const Divider = memo<DividerProps>(({ color = '#123456', className, ...props }) => {
   return (
     <hr
       {...props}
