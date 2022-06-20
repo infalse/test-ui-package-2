@@ -1,6 +1,6 @@
 {
   "name": "test-ui-library-3",
-  "version": "0.1.17",
+  "version": "0.1.18",
   "author": "Kirill Evtushenko",
   "license": "MIT",
   "main": "dist/index.js",
