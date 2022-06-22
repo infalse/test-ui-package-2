@@ -1,7 +1,8 @@
 module.exports = {
+  presets: [require('./src/utils/preset/tailwind')],
   content: ['./src/**/*.{ts,tsx}'],
   theme: {
-    extend: {},
+    extend: {}
   },
   plugins: [],
   safelist:
@@ -9,7 +10,7 @@ module.exports = {
       ? []
       : [
           {
-            pattern: /^(.*?)/,
-          },
-        ],
+            pattern: /^(.*?)/
+          }
+        ]
 };
