@@ -6,5 +6,5 @@ export { Divider } from './components/atoms/Divider';
 
 // molecules
 export { AnimatedHeavyMolecule } from './components/molecules/AnimatedHeavyMolecule';
-/* @ts-ignore */
-export { theme } from './utils/preset/tailwind.js';
+
+export const TailwindPreset = require('./utils/preset/tailwind.js');
