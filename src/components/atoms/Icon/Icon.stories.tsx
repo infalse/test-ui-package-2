@@ -7,7 +7,8 @@ import {
   ChevronLeftIcon,
   CalendarIcon,
   ClockIcon,
-  LinkedInIcon
+  LinkedInIcon,
+  ChevronRightIcon
 } from '.';
 
 export default {
@@ -17,7 +18,15 @@ export default {
   }
 };
 
-const IconMap = [AppleIcon, ChevronRedIcon, ChevronLeftIcon, CalendarIcon, ClockIcon, LinkedInIcon];
+const IconMap = [
+  AppleIcon,
+  ChevronRedIcon,
+  ChevronLeftIcon,
+  ChevronRightIcon,
+  CalendarIcon,
+  ClockIcon,
+  LinkedInIcon
+];
 
 const Template: ComponentStory<typeof AppleIcon> = () => (
   <div className="flex flex-wrap">

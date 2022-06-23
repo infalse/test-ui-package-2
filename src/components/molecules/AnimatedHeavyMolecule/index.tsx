@@ -14,7 +14,7 @@ export const AnimatedHeavyMolecule: React.FC<AnimatedHeavyMoleculeProps> = ({ du
     <MotionConfig reducedMotion="user">
       <div className="w-[300px] h-[300px] flex justify-center items-center">
         <motion.div
-          className="bg-red-200 rounded-3xl w-16 h-16"
+          className="bg-blue-custom rounded-3xl w-16 h-16"
           animate={{
             scale: [1, 2, 2, 1, 1],
             rotate: [0, 0, 270, 270, 0],

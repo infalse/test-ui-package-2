@@ -1,6 +1,10 @@
 module.exports = {
   theme: {
     colors: {
+      takeda: {
+        red: '#e52026',
+        light: '#edf2f4'
+      },
       blue: {
         light: '#888888',
         custom: '#123456',
