@@ -4,7 +4,7 @@
   "author": "Kirill Evtushenko",
   "license": "MIT",
   "main": "dist/index.js",
-  "module": "dist/test-ui-library-3.esm.js",
+  "module": "dist/esm/index.js",
   "typings": "dist/index.d.ts",
   "homepage": "https://github.com/infalse/test-ui-package-2",
   "repository": {

@@ -5,9 +5,11 @@ export default defineConfig({
     index: 'src/index.tsx',
     unsafe: 'src/unsafe/index.tsx'
   },
-  format: 'esm',
+  format: ['cjs', 'esm'],
   treeshake: true,
   splitting: true,
   sourcemap: false,
-  clean: true
+  clean: true,
+  legacyOutput: true,
+  dts: true
 });
