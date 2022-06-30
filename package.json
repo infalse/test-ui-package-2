@@ -14,9 +14,8 @@
   "scripts": {
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "publish-interactive": "np --any-branch --contents dist",
-    "prepack": "echo 123",
-    "build": "tsup --onSuccess \"cp package.json dist\""
+    "publish-interactive": "tsup && np --any-branch --contents dist",
+    "prepublishOnly": "echo 123"
   },
   "peerDependencies": {
     "react": ">=16"
