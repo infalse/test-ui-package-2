@@ -15,7 +15,7 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "publish-interactive": "tsup && np --any-branch --contents dist",
-    "prepublishOnly": "echo 123"
+    "prepublishOnly": "cp package.json dist"
   },
   "peerDependencies": {
     "react": ">=16"
