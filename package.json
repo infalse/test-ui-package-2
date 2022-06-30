@@ -3,9 +3,9 @@
   "version": "0.1.26",
   "author": "Kirill Evtushenko",
   "license": "MIT",
-  "main": "dist/index.js",
-  "module": "dist/esm/index.js",
-  "typings": "dist/index.d.ts",
+  "main": "index.js",
+  "module": "esm/index.js",
+  "typings": "index.d.ts",
   "homepage": "https://github.com/infalse/test-ui-package-2",
   "repository": {
     "type": "git",
@@ -17,8 +17,8 @@
   "scripts": {
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "publish-interactive": "np --any-branch",
-    "prepare": "tsup"
+    "publish-interactive": "np --any-branch --contents dist",
+    "prepare": "tsup --onSuccess \"cp package.json dist\""
   },
   "peerDependencies": {
     "react": ">=16"
