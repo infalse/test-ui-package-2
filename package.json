@@ -11,14 +11,11 @@
     "type": "git",
     "url": "https://github.com/infalse/test-ui-package-2.git"
   },
-  "files": [
-    "dist"
-  ],
   "scripts": {
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "publish-interactive": "np --any-branch --contents dist",
-    "prepare": "tsup --onSuccess \"cp package.json dist\""
+    "build": "tsup --onSuccess \"cp package.json dist\""
   },
   "peerDependencies": {
     "react": ">=16"
